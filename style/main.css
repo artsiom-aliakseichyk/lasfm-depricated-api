@@ -1,0 +1,23 @@
+.band-img,
+.band-url {
+	display: block;
+	margin: auto;
+}
+
+.band > * {
+	text-align: center;
+}
+
+.band > h4 {
+	height: 36px;
+}
+
+.band > .band-url {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.band-url:active,
+.band-url:visited {
+	color: #337ab7;
+}
