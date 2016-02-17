@@ -26,7 +26,7 @@ class BandWrapper extends React.Component {
 	}
 
 	componentDidMount() {
-		let lastFmReq = "http://ws.audioscrobbler.com/2.0/?api_key=YOUR_API_KEY_HERE&method=user.getPersonalTags&user=gagashka&tag=screamo&taggingtype=artist&format=json";
+		let lastFmReq = "http://ws.audioscrobbler.com/2.0/?api_key=YOUR_API_KEY_HERE&method=user.getPersonalTags&user=YOUR_USER_NAME&tag=TAG_NAME&taggingtype=artist&format=json";
 		this.serverRequest = $.get(lastFmReq, function(data) {
 			let bands = data.taggings.artists.artist;
 			this.setState({
